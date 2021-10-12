@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public interface TextGraphicsConverter {
+
     /**
      * Конвертация изображения, переданного как урл, в текстовую графику.
      * @param url урл изображения
@@ -18,9 +19,8 @@ public interface TextGraphicsConverter {
      * Если исходное изображение имеет характеристики, превышающие максимальные, оно сжимается
      * с сохранением пропорций.
      * @param width максимальная ширина текстовых картинок
-     * @return
      */
-    void setMaxWidth(int width) throws IOException;
+    void setMaxWidth(int width);
 
     /**
      * Устанавливает максимальную высоту результирующего изображения в "текстовых пикселях".
